@@ -7,8 +7,8 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
     <header className="bg-header font-chrome text-header-foreground">
-      <div className="container-site flex h-[90px] items-center justify-between">
-        <a href="https://nohousecasinos.com/" className="shrink-0 pl-[15px]" aria-label="NoHouse Casinos home">
+      <div className="mx-auto flex h-[90px] w-full max-w-[1140px] items-center justify-between px-[15px]">
+        <a href="https://nohousecasinos.com/" className="shrink-0" aria-label="NoHouse Casinos home">
           <img src={siteLogo} alt="NoHouse Casinos Logo" width={140} height={50} className="h-[50px] w-auto" />
         </a>
         <nav className="hidden lg:block" aria-label="Main">

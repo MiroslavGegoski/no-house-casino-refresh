@@ -25,7 +25,7 @@ export function TopCasinos() {
   return (
     <section id="top-casinos" className="scroll-mt-6 py-20 md:py-28">
       <div className="container-site">
-        <div className="grid gap-8 lg:grid-cols-[1fr_1.1fr] lg:items-end">
+        <div className="grid gap-8 lg:grid-cols-[1fr_1.1fr] lg:items-start">
           <SectionHeading eyebrow="The 2026 rankings" title="Top Online Casinos in Australia for 2026" />
           <div className="space-y-4 text-muted-foreground">
             {topIntro.map((p) => (

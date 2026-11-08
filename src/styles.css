@@ -124,7 +124,7 @@
   --social-x: oklch(0 0 0);
   --social-foreground: oklch(1 0 0);
 
-  --gradient-hero: linear-gradient(100deg, oklch(0.205 0.065 258) 0%, oklch(0.27 0.09 255 / 0.92) 45%, oklch(0.329 0.101 253 / 0.25) 100%);
+  --gradient-hero: linear-gradient(100deg, oklch(0.205 0.065 258) 0%, oklch(0.25 0.085 256 / 0.9) 38%, oklch(0.329 0.101 253 / 0) 70%);
   --gradient-gold: linear-gradient(135deg, oklch(0.88 0.15 90), oklch(0.78 0.16 75));
   --gradient-navy: linear-gradient(160deg, oklch(0.29 0.095 254), oklch(0.2 0.065 258));
   --gradient-fade: linear-gradient(180deg, transparent, oklch(0.205 0.065 258 / 0.85));
@@ -213,8 +213,8 @@
 }
 
 @utility mask-fade-left {
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 35%);
-  mask-image: linear-gradient(90deg, transparent 0%, black 35%);
+  -webkit-mask-image: radial-gradient(ellipse 60% 70% at 55% 55%, black 55%, transparent 100%);
+  mask-image: radial-gradient(ellipse 60% 70% at 55% 55%, black 55%, transparent 100%);
 }
 @utility mask-fade-bottom {
   -webkit-mask-image: linear-gradient(180deg, black 70%, transparent 100%);

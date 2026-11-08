@@ -17,7 +17,7 @@ export function Hero() {
         src={heroImage}
         alt=""
         aria-hidden
-        className="mask-fade-left pointer-events-none absolute bottom-0 right-[-60px] h-[78%] w-auto max-w-none opacity-40 sm:right-0 sm:opacity-70 md:h-[92%] lg:right-[max(0px,calc((100vw-1140px)/2-40px))] lg:opacity-100"
+        className="mask-fade-left pointer-events-none absolute bottom-0 right-[-80px] h-[70%] w-auto max-w-none opacity-40 sm:right-0 sm:opacity-70 md:h-[92%] lg:right-[max(0px,calc((100vw-1140px)/2-40px))] lg:opacity-100"
       />
       <div className="absolute inset-0 bg-hero" aria-hidden />
 

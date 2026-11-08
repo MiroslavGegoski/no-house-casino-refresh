@@ -123,13 +123,13 @@ export function Games() {
           eyebrow="Game lobby"
           title="Most Popular Online Casino Games in Australia – Play Free, No Download Required"
         />
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-5 lg:grid-cols-2">
           {games.map((g) => (
             <article
               key={g.title}
-              className="group flex flex-col overflow-hidden rounded-3xl border bg-card shadow-card transition-all hover:-translate-y-1 hover:shadow-lift"
+              className="group grid overflow-hidden rounded-3xl border bg-card shadow-card transition-all hover:-translate-y-1 hover:shadow-lift sm:grid-cols-[200px_1fr]"
             >
-              <div className="relative aspect-[16/10] overflow-hidden bg-navy">
+              <div className="relative aspect-square overflow-hidden bg-navy sm:aspect-auto">
                 <img
                   src={g.img}
                   alt={`Australian Online Casino ${g.title}`}
@@ -137,12 +137,12 @@ export function Games() {
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="flex flex-1 flex-col p-6">
+              <div className="flex flex-col p-6">
                 <h3 className="text-2xl font-extrabold text-foreground">{g.title}</h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">{g.text}</p>
                 <a
                   href={g.href}
-                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary group-hover:gap-3 transition-all"
+                  className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all group-hover:gap-3"
                 >
                   Discover More About {g.title} <ArrowRight className="size-4" />
                 </a>
