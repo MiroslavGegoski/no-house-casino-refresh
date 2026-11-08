@@ -129,12 +129,12 @@ export function Games() {
               key={g.title}
               className="group grid overflow-hidden rounded-3xl border bg-card shadow-card transition-all hover:-translate-y-1 hover:shadow-lift sm:grid-cols-[200px_1fr]"
             >
-              <div className="relative flex aspect-square items-center overflow-hidden bg-navy-art sm:aspect-auto">
+              <div className="relative flex aspect-[16/10] items-center justify-center overflow-hidden bg-navy-art sm:aspect-auto">
                 <img
                   src={g.img}
                   alt={`Australian Online Casino ${g.title}`}
                   loading="lazy"
-                  className="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="aspect-square h-full w-auto object-cover transition-transform duration-500 group-hover:scale-105 sm:h-auto sm:w-full"
                 />
               </div>
               <div className="flex flex-col p-6">
