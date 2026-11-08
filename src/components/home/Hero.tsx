@@ -55,9 +55,10 @@ export function EditorNote() {
   return (
     <div className="container-site relative -mt-16 md:-mt-20">
       <div className="grid gap-6 rounded-3xl border bg-card p-6 shadow-lift sm:p-10 md:grid-cols-2 md:gap-10">
-        <p className="text-lg leading-relaxed text-foreground first-letter:float-left first-letter:mr-3 first-letter:font-display first-letter:text-6xl first-letter:font-extrabold first-letter:leading-[0.85] first-letter:text-primary">
-          {intro[1]}
-        </p>
+        <div>
+          <span aria-hidden className="block font-display text-6xl font-extrabold leading-none text-gold">“</span>
+          <p className="-mt-3 font-display text-xl font-semibold leading-snug text-foreground sm:text-2xl">{intro[1]}</p>
+        </div>
         <div className="flex flex-col justify-between gap-6">
           <p className="leading-relaxed text-muted-foreground">{intro[2]}</p>
           <div className="flex items-center gap-3 border-t pt-5 text-sm">
