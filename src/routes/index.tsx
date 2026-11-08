@@ -1,23 +1,53 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { SiteHeader } from "@/components/site/SiteHeader";
+import { SiteFooter } from "@/components/site/SiteFooter";
+import { EditorNote, Hero } from "@/components/home/Hero";
+import { TopCasinos } from "@/components/home/TopCasinos";
+import { Games, HowItWorks, HowToChoose, HowWeRate, Legal } from "@/components/home/Guide";
+import { Bonuses, Faqs, LatestReviews, Payments, Providers, WhyPlay } from "@/components/home/Extras";
+import { heroImage } from "@/data/home-content";
 
-// The home route ships no og:image, so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const title = "Best Aussie Casinos for 2026 - Compare Australian Online Casinos | NoHouseCasinos";
+const description =
+  "Compare the best Australian online casinos for 2026. Licensed, payout-friendly sites with big bonuses, free spins and fast PayID withdrawals.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { property: "og:image", content: heroImage },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: heroImage },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background">
+      <SiteHeader />
+      <main>
+        <Hero />
+        <EditorNote />
+        <TopCasinos />
+        <HowItWorks />
+        <HowToChoose />
+        <Legal />
+        <Games />
+        <HowWeRate />
+        <Bonuses />
+        <Providers />
+        <WhyPlay />
+        <Payments />
+        <LatestReviews />
+        <Faqs />
+      </main>
+      <SiteFooter />
     </div>
   );
 }
