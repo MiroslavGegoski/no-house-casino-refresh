@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Homepage content (headings, copy, image URLs, links) lives in `src/data/`; components in `src/components/home` only render it. Why: the copy mirrors the live nohousecasinos.com page and must stay easy to update in one place.
+- `src/components/site/SiteHeader.tsx` and `SiteFooter.tsx` replicate the live site's header/footer and use their own `header`/`footer` tokens; redesign work must not restyle them. Why: the client wants the existing menu, logo and footer unchanged.
