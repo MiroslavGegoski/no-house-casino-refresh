@@ -57,7 +57,7 @@ export function EditorNote() {
       <div className="grid gap-6 rounded-3xl border bg-card p-6 shadow-lift sm:p-10 md:grid-cols-2 md:gap-10">
         <div>
           <span aria-hidden className="block font-display text-6xl font-extrabold leading-none text-gold">“</span>
-          <p className="-mt-3 font-display text-xl font-semibold leading-snug text-foreground sm:text-2xl">{intro[1]}</p>
+          <p className="-mt-3 font-display text-lg font-semibold leading-snug text-foreground sm:text-xl">{intro[1]}</p>
         </div>
         <div className="flex flex-col justify-between gap-6">
           <p className="leading-relaxed text-muted-foreground">{intro[2]}</p>

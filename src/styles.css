@@ -45,6 +45,7 @@
   --color-navy: var(--navy);
   --color-navy-deep: var(--navy-deep);
   --color-navy-foreground: var(--navy-foreground);
+  --color-navy-art: var(--navy-art);
   --color-navy-muted: var(--navy-muted);
   --color-gold: var(--gold);
   --color-gold-soft: var(--gold-soft);
@@ -107,6 +108,7 @@
   --navy: oklch(0.329 0.101 253);
   --navy-deep: oklch(0.205 0.065 258);
   --navy-foreground: oklch(0.985 0.005 85);
+  --navy-art: oklch(0.225 0.06 250);
   --navy-muted: oklch(0.8 0.04 250);
   --gold: oklch(0.83 0.16 84);
   --gold-soft: oklch(0.93 0.08 88);
