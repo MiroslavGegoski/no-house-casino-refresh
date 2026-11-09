@@ -139,7 +139,6 @@ export const legalCard = {
   title: "Can Aussies Play Online Casinos?",
   text: "Yes — with a catch. The Interactive Gambling Act 2001 stops companies from offering online casino games to Australians, but it doesn’t make it illegal for you to play at offshore casinos. That’s why every site we list holds an international licence and accepts Aussie players.",
   image: legalArt,
-  link: { label: "Read our Australian gambling law guide", href: `${S}/reviews/` },
 };
 
 export const playSafe = {
