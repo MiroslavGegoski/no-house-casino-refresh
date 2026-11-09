@@ -134,7 +134,9 @@ export function Games() {
                   src={g.img}
                   alt={`Australian Online Casino ${g.title}`}
                   loading="lazy"
-                  className="aspect-square h-full w-auto object-cover transition-transform duration-500 group-hover:scale-105 sm:h-auto sm:w-full"
+                  width={816}
+                  height={816}
+                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="flex flex-col p-6">
