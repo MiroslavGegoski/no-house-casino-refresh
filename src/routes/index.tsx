@@ -5,7 +5,6 @@ import { EditorNote, Hero } from "@/components/home/Hero";
 import { TopCasinos } from "@/components/home/TopCasinos";
 import { Games, HowItWorks, HowToChoose, HowWeRate, Legal } from "@/components/home/Guide";
 import { Bonuses, Faqs, LatestReviews, Payments, Providers, WhyPlay } from "@/components/home/Extras";
-import { heroImage } from "@/data/home-content";
 
 const title = "Best Aussie Casinos for 2026 - Compare Australian Online Casinos | NoHouseCasinos";
 const description =
@@ -19,9 +18,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:image", content: heroImage },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: heroImage },
     ],
   }),
   component: Index,

@@ -30,5 +30,5 @@ use the editor.
 <!-- LOVABLE:END -->
 
 ## Project rules
-- Homepage content (headings, copy, image URLs, links) lives in `src/data/`; components in `src/components/home` only render it. Why: the copy mirrors the live nohousecasinos.com page and must stay easy to update in one place.
+- Homepage content (headings, copy, image URLs, links) lives in `src/data/`; components in `src/components/home` only render it. Body images are local files in `src/assets/` (casino, provider and payment logos stay remote brand URLs). Why: all homepage copy and imagery must stay easy to update in one place.
 - `src/components/site/SiteHeader.tsx` and `SiteFooter.tsx` replicate the live site's header/footer and use their own `header`/`footer` tokens; redesign work must not restyle them. Why: the client wants the existing menu, logo and footer unchanged.
