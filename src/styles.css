@@ -218,6 +218,10 @@
   -webkit-mask-image: radial-gradient(closest-side, black 62%, transparent 100%);
   mask-image: radial-gradient(closest-side, black 62%, transparent 100%);
 }
+@utility mask-fade-x {
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 45%);
+  mask-image: linear-gradient(90deg, transparent 0%, black 45%);
+}
 @utility mask-fade-bottom {
   -webkit-mask-image: linear-gradient(180deg, black 70%, transparent 100%);
   mask-image: linear-gradient(180deg, black 70%, transparent 100%);

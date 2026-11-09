@@ -1,147 +1,192 @@
-const U = "https://nohousecasinos.com/wp-content/uploads";
+/**
+ * Homepage content for the new nohousecasinos.com homepage.
+ * Every heading, paragraph, image and link the body sections render lives here.
+ * Header and footer data (bottom of file) mirror the live site and must not change.
+ */
+import heroPhone from "@/assets/hero-phone-sydney.jpg";
+import testLabDesk from "@/assets/test-lab-desk.jpg";
+import playSafe from "@/assets/play-safe.jpg";
+import ctaBackdrop from "@/assets/hero-casino.jpg";
+import calculatorArt from "@/assets/bonus-casino.jpg";
+import legalArt from "@/assets/why-australia.jpg";
+import payoutsArt from "@/assets/payments-secure.jpg";
+import gamePokies from "@/assets/game-pokies.jpg";
+import gameBlackjack from "@/assets/game-blackjack.jpg";
+import gameRoulette from "@/assets/game-roulette.jpg";
+import gamePoker from "@/assets/game-poker.jpg";
+import gameBaccarat from "@/assets/game-baccarat.jpg";
+import gameKeno from "@/assets/game-keno.jpg";
 
-export const heroImage = `${U}/2025/05/Nov-Background.webp`;
+const U = "https://nohousecasinos.com/wp-content/uploads";
+const S = "https://nohousecasinos.com";
+
 export const siteLogo = `${U}/2025/10/cropped-cropped-NoHouse-Casinos-Logo-LastVersion.webp`;
 
-export const intro = [
-  "If you are passionate about chasing bonuses and cashing out winnings like I am, there’s no point in telling you just how tricky finding a trustworthy online casino that actually delivers can be.",
-  "I have started 2026 exploring a bunch of Aussie-friendly online casinos — and honestly, you’re better off skipping a few of them. The platforms that made it onto my list are fully licensed and payout-friendly, offering exactly the kind of thrill a pokie enthusiast dreams of stumbling upon.",
-  "Packed with top-tier games and built to give Aussie players the entertainment they’re after, these online casinos offer the ultimate online gaming experience Down Under. Massive jackpots, smooth mobile gaming, attractive bonuses? Whatever you want, these online casinos have got you covered.",
+/* ---------- Hero ---------- */
+export const hero = {
+  eyebrow: "Australia’s independent casino guide · Updated monthly",
+  title: "Real Money Casinos, Tested by Real Aussie Punters",
+  highlight: "Tested by Real Aussie Punters",
+  text: "We sign up, deposit, play and cash out at every casino before it earns a spot on our list. No paid rankings, no fluff — just the sites worth your time and your money.",
+  primary: { label: "See the 2026 leaderboard", href: "#leaderboard" },
+  secondary: { label: "Try the bonus calculator", href: "#bonus-calculator" },
+  image: heroPhone,
+  imageAlt: "Phone showing a gold pokie game in front of Sydney Harbour at night",
+  quickLinks: [
+    { label: "Pokies", href: `${S}/games/free-pokies/` },
+    { label: "No deposit bonuses", href: `${S}/bonuses/no-deposit-bonuses/` },
+    { label: "PayID casinos", href: `${S}/payments/payid/` },
+    { label: "High roller", href: `${S}/bonuses/high-roller/` },
+  ],
+};
+
+export const heroStats = [
+  { value: "30", label: "casinos ranked" },
+  { value: "100%", label: "real-money tested" },
+  { value: "AUD", label: "friendly sites only" },
 ];
 
-export const topIntro = [
-  "I’ve rounded up the top Aussie online casinos packed with big bonuses and crypto payment options, so you can enjoy your favourite games anytime, anywhere. I’ve done the rankings based on a thorough analysis of welcome bonuses, reload offers, cashback promotions, and tournament opportunities tailored specifically for Australian players.",
-  "Diving deep into pokie stats like RTP, volatility, hit frequency, and checking for progressive jackpots or Megaways to keep things exciting, I’ve explored Australia’s best real money online casinos—so you don’t have to—and featured only those truly worthy of your time and money.",
-];
+/* ---------- Podium + leaderboard ---------- */
+export const podium = {
+  eyebrow: "This month’s podium",
+  title: "The Top 3 Casinos Right Now",
+  text: "Our three highest-scoring casinos this month. Each one cleared every check in our test lab — from sign-up to the first withdrawal.",
+};
 
-export const howItWorks = [
-  "Over the last few years, Australian online casinos have really taken off due to the Australia’s long interest in having a punt along with the advancement of the internet. Between a solid casino presence and a healthy domestic tourist industry, sports betting and casino gaming have become a national obsession and pastime in Australia. But as more Aussies get into gambling, the industry is attracting more regulatory attention.",
-  "Indeed, in 2020 the size of the Australian online gambling market sat at approximately A$2.86 billion, and it’s growing. Sports betting, casino games and poker are driving the revenue, with almost 70% of all gaming now occurring on a smartphone or tablet. That just shows how important mobile-friendly websites are.",
-  "The naked truth, however, is that attracting new players gives casino owners a headache due to restrictions on advertising — including the reduction of gambling adverts during child-friendly hours and potentially getting rid of them altogether. There also appears to be a crackdown on unlicensed operators, raising concerns on the enforcement of stricter measures on complaints.",
-  "Today, gambling is a common social pastime for many Aussies, and it all started during the 1980s when gaming machines found their way into pubs and community clubs. As a result, online betting has surged in popularity over the last two decades with Australians spending about $25 billion on wagers annually.",
-  "Smartphones and tablets enable players to access casino games at any time of the day and from any location such as their house, while commuting, or even during a well-deserved vacation.",
-  "As always, safety comes first as licensed casinos enforce stringent security protocols like SSL encryption and two-factor authentication. Also, responsive customer support is always available should players need assistance. Exciting promotions such as welcome bonuses, free spins, and loyalty rewards add to the thrill. Australia’s online casino industry offers the ever-changing selection of games, flexible payment options, and innovative casino technology.",
-  "All in all, Australia’s online casino industry continues to thrive, driven by a strong betting culture, evolving regulations, cutting-edge tech, and a growing focus on player experience. It’s no surprise the country stands out as a major player in the global gambling scene.",
-];
+export const leaderboard = {
+  eyebrow: "Full rankings",
+  title: "The 2026 Aussie Casino Leaderboard",
+  text: "Sort the full list your way. Our ranking weighs safety, payouts and fairness first — or flip to the biggest bonus or most free spins if that’s what you’re after.",
+  sortLabels: {
+    rank: "Our ranking",
+    bonus: "Biggest bonus",
+    spins: "Most free spins",
+    match: "Highest match %",
+  },
+};
 
-export const marketStats = [
-  { value: "A$2.86B", label: "Online gambling market size in 2020" },
-  { value: "~70%", label: "Of all gaming happens on a smartphone or tablet" },
-  { value: "$25B", label: "Wagered by Australians every year" },
-  { value: "1980s", label: "When pokies first arrived in pubs & clubs" },
-];
+/* ---------- Bonus calculator ---------- */
+export const calculator = {
+  eyebrow: "Bonus maths, made simple",
+  title: "How Much Do You Really Need to Play?",
+  text: "A big bonus is only as good as its wagering. Plug in an offer and see how much you get, what your balance becomes and how much you need to bet before you can withdraw.",
+  note: "Always check the casino’s own terms — some games count less towards wagering, and offers can have time limits and max bet rules.",
+  image: calculatorArt,
+};
 
-export const chooseIntro =
-  "Flashy graphics and bonuses aren’t everything when choosing a real-money online casino in Australia. These are the elements I look for before any of the online casino platforms I try and review gets on my list of recommendations:";
-
-export const chooseCriteria = [
-  { title: "REPUTATION", icon: "star", text: "I do my homework by digging into player reviews, forums, and history. Casinos with too many complaints and slow payouts are out." },
-  { title: "LICENSING", icon: "badge", text: "What I make sure of before choosing a casino to put on my list is that it’s licensed by a trustworthy body. A good sign would be if it’s licensed by Curacao, MGA, or UKGC." },
-  { title: "SECURITY", icon: "shield", text: "SSL encryption is a must. I also check for responsible gambling tools." },
-  { title: "MOBILE GAMING", icon: "phone", text: "Since mobile gaming is what most players opt for, I test if the site works on iOS and Android, making sure I include those offering custom apps." },
-  { title: "BANKING METHODS", icon: "wallet", text: "Discover fast, secure, and convenient banking methods at Australian online casinos, including credit cards, e-wallets, and crypto options for easy deposits and quick withdrawals." },
-] as const;
-
-export const legal = [
-  "Well, the truth is that the answer to this question is both yes and no, and here’s where it gets a bit tricky. The Australian legal framework regulating online gambling is rather complex, which is seen in the legal status of this form of entertainment.",
-  "While it’s technically illegal for Australian residents to gamble online with local operators, those living abroad or using internationally licensed sites can still play legally. The truth is that gambling is deeply embedded in Aussie culture—despite making up less than 1% of the world’s population, Australia is home to 18% of the planet’s poker machines. In 2022 alone, 72% of Australians gambled at least once, and 38% placed bets each week.",
-  "Under Australia’s current laws—especially the Interactive Gambling Act of 2001—local companies aren’t allowed to offer online gambling to residents. However, offshore sites licensed in places like Malta or Curacao can still operate. There’s growing momentum to update these rules, with proposals including a national gambling watchdog and a universal self-exclusion register to better support players who enjoy gambling.",
-];
-export const legalVerdict =
-  "The good news is that every casino on my list—tested after trying out a dozen—is licensed and regulated offshore, making them legal for Australian players.";
-export const legalStats = [
-  { value: "<1%", label: "of the world’s population" },
-  { value: "18%", label: "of the planet’s poker machines" },
-  { value: "72%", label: "of Aussies gambled in 2022" },
-  { value: "38%", label: "placed bets each week" },
-];
+/* ---------- Games ---------- */
+export const gamesSection = {
+  eyebrow: "Find your game",
+  title: "What Do You Feel Like Playing Tonight?",
+  text: "From quick spins to slow-burn strategy, pick a game and we’ll show you where to play it.",
+};
 
 export const games = [
-  { title: "Pokies", img: `${U}/2025/05/Australian-Casino-Online-Pokies.webp`, href: "https://nohousecasinos.com/games/free-pokies/", text: "Pokies easily top the list of Australia’s favorite casino games. They come with exciting themes and massive jackpots. They are easy to play – just spin the reels and match symbols, and you are set to win. Ranging from classic 3-reel slots to modern video pokies, they cater to both novices and high rollers seeking big returns alongside entertainment." },
-  { title: "Blackjack", img: `${U}/2025/05/Australian-Online-Casino-Blackjack-1.webp`, href: "https://nohousecasinos.com/games/online-blackjack/", text: "One of the famous table games, Blackjack is played by millions around the world and enjoyed for its blend of luck and strategy. The objective is to defeat the dealer by getting a hand value closest to 21 but not exceeding 21. Online casinos offer multiple versions ranging from live dealer games that bring the real casino feel to your home." },
-  { title: "Roulette", img: `${U}/2025/05/Australian-Online-Casino-Roulette.webp`, href: "https://nohousecasinos.com/games/online-roulette/", text: "Players take their chances on a spinning wheel placing bets on where a ball will drop, this is Roulette, a thrilling game played worldwide. There are American, European, and French roulette options. Aussie players particularly appreciate the live dealer versions as they bring the authentic casino atmosphere straight to your screen." },
-  { title: "Poker", img: `${U}/2025/05/Australian-Online-Casino-Poker.webp`, href: "https://nohousecasinos.com/games/online-poker/", text: "Pokers are reserved for real experts. Among its many variants, Texas Hold’em and video poker are most commonly played. Online poker rooms host tournaments and cash games where players can test their strategic nous. It is most suitable to players who consider themselves competitive and enjoy bluffing their rivals for hefty payouts." },
-  { title: "Baccarat", img: `${U}/2025/05/Australian-Online-Casino-Baccarat.webp`, href: "https://nohousecasinos.com/games/online-baccarat/", text: "Baccarat is a cultivation-level card game that is beloved by the big spenders. Players bet on the player, banker, or a tie, aiming to have a hand total closest to nine. Online live baccarat offers fast-paced action with real dealers, combining chance and style." },
-  { title: "Keno", img: `${U}/2025/05/Australian-Online-Casino-Keno.webp`, href: "https://nohousecasinos.com/games/keno/", text: "Keno is an easy lottery-type game whereby players select numbers and hope to match them with those drawn randomly. It is exhilarating at a low-stakes level and ideal for casual players. Instant keno games are available at many online casinos without needing to download anything." },
+  { title: "Pokies", tag: "Most played", img: gamePokies, href: `${S}/games/free-pokies/`, text: "Thousands of reels, from three-reel classics to Megaways and jackpot pokies." },
+  { title: "Blackjack", tag: "Strategy", img: gameBlackjack, href: `${S}/games/online-blackjack/`, text: "Beat the dealer to 21 with the right moves." },
+  { title: "Roulette", tag: "Classic", img: gameRoulette, href: `${S}/games/online-roulette/`, text: "European, French or American — place your bets." },
+  { title: "Live Poker", tag: "Skill", img: gamePoker, href: `${S}/games/online-poker/`, text: "Hold’em tables, video poker and tournaments." },
+  { title: "Baccarat", tag: "High stakes", img: gameBaccarat, href: `${S}/games/online-baccarat/`, text: "Player, banker or tie — fast and elegant." },
+  { title: "Keno", tag: "Easy play", img: gameKeno, href: `${S}/games/keno/`, text: "Pick your numbers and watch the draw." },
 ];
 
-export const rateIntro =
-  "Finding reputable Aussie online casinos is a task I approach seriously and with much thought, rolling out a strict review process to keep this guide as accurate and as helpful as possible.";
-export const rateSteps = [
-  { title: "Background and Safety Check", text: ["The first thing I do before reviewing the casino for the games it offers is making sure it’s licensed. Reading the fine print and testing SSL encryption allow me to assess whether the casino takes user protection seriously."] },
-  { title: "Deposit and Support Test", text: ["I sign up, deposit real money, and contact support with real questions to see if agents are responsive and reliable, using all the available communication channels to check how they work. Live chat is usually the fastest option, but you can also contact the agents via phone or mail. Their readiness to assist is what helps me decide whether the online casino is worth getting on my list of recommendations."] },
-  { title: "Game Playthrough", text: ["Of course, for any gaming enthusiast it is important to be able to choose from a variety of game selections, and while most casinos offer plenty of different games, I test out pokies, table games, and live dealers."] },
-  { title: "Cash Out", text: ["The payment options are one of the crucial segments. So, before a gambling site gets on my list, I check if it accepts Australian dollars so that conversion fees can be avoided. Also, it’s important the site to support reliable and familiar payment options such as the ones I listed above. With these methods, your sensitive information is protected and secured, which is crucial when transacting online.", "When testing payment methods, I withdraw winnings to check how fast and smoothly the process is."] },
-];
-export const rateOutro = "If a casino fails any step, it doesn’t make the list.";
+/* ---------- Test lab ---------- */
+export const testLab = {
+  eyebrow: "Inside our test lab",
+  title: "Every Casino Gets the Same 5-Point Check",
+  text: "Our reviewers open real accounts with their own money. If a casino fails any of these checks, it doesn’t make the list — no matter what it offers us.",
+  image: testLabDesk,
+  imageAlt: "Reviewer’s desk with a laptop, checklist, coins and casino chips",
+  checks: [
+    { title: "Licence & security", text: "We confirm a valid offshore licence, SSL encryption and clear company details." },
+    { title: "Real deposit, real withdrawal", text: "We deposit, play and cash out to time how fast the money actually lands." },
+    { title: "Bonus terms in plain English", text: "We read the fine print on wagering, max bets and expiry so you don’t have to." },
+    { title: "Games & software", text: "We check the lobby for trusted studios, fair games and smooth mobile play." },
+    { title: "Support that answers", text: "We message live chat and email with real questions and rate the replies." },
+  ],
+  link: { label: "Read our full rating method", href: `${S}/how-we-rate-casinos/` },
+};
 
-export const bonusIntro =
-  "Knowing your bonuses, will help you play smarter and win bigger! So don’t be afraid to unlock extra value with every spin and deal.";
-export const bonuses = [
-  { title: "Casino Bonuses", img: `${U}/2025/05/Casino-Bonuses.webp`, href: "https://nohousecasinos.com/bonuses/", text: "A casino bonus is usually a percentage-based match to your deposit which gives you additional funds to play with. While boosting a player’s bankroll, more often than not, these bonuses come with wagering requirements which stipulate that one must bet a certain amount before withdrawing any winnings derived from the bonus." },
-  { title: "No Deposit Bonuses", img: `${U}/2025/05/No-Deposit-Bonuses.webp`, href: "https://nohousecasinos.com/bonuses/no-deposit-bonuses/", text: "With a No Deposit bonus, users are provided with free spins or bonus credits upon registering which allows them to explore a casino platform without any monetary risk. This is a good way to understand the games and the casino’s offerings before making a real cash deposit." },
-  { title: "Welcome Bonuses", img: `${U}/2025/05/Welcome-Bonus.webp`, href: "https://nohousecasinos.com/bonuses/welcome/", text: "Welcome Bonuses are aimed at luring in new players by offering a combination of deposit match and free spins. While allowing for a boosted starting balance which increases the new player’s chances of winning, these bonuses tend to have terms and conditions alongside wagering requirements that must be meticulously checked." },
-  { title: "Reload Bonuses", img: `${U}/2025/05/Reload-Bonus.webp`, href: "https://nohousecasinos.com/bonuses/reload/", text: "Reload bonuses are given to loyal customers when they replenish the funds following their initial deposit. These bonuses can be a match percentage or free spins and help keep your gameplay going strong, giving you more chances to win without spending extra money." },
-  { title: "Cashback Bonuses", img: `${U}/2025/05/Cashback-Bonus.webp`, href: "https://nohousecasinos.com/bonuses/cashback/", text: "Cashback bonuses are limited to a percentage of your net losses for a given time, often a week. Think of it as a cushion that lessens the impact during losing streaks, giving you something to work with instead starting from ground zero." },
-  { title: "High Roller Bonuses", img: `${U}/2025/05/High-Roller-Bonus.webp`, href: "https://nohousecasinos.com/bonuses/high-roller/", text: "These are the bonuses offered to players who deposit a considerable amount of money. This type of bonus also contains larger match percentages, special offers, and greater perquisite attention. If betting large amounts is your specialty, these bonuses are designed to serve an additional value and give incentives to supercharge your gaming journey." },
-];
-
-export const providersIntro =
-  "A casino’s games, performance, and overall experience rely heavily on its software partners. The top Australian online casinos work with industry-leading providers, delivering high-quality graphics, smooth gameplay, and innovative features. Some of the most trusted names powering Aussie casinos include:";
 export const providers = [
-  { name: "Pragmatic Play", img: `${U}/2025/05/Pragmatic-Play-Casino-Software-Provider-Logo.webp`, href: "https://nohousecasinos.com/providers/pragmatic-play-casinos/" },
-  { name: "PlayTech", img: `${U}/2025/05/PlayTech-Casino-Software-Provider-Logo.webp`, href: "https://nohousecasinos.com/providers/playtech-casinos/" },
-  { name: "Play'n GO", img: `${U}/2025/05/Play-N-Go-Casino-Software-Provider-Logo.webp`, href: "https://nohousecasinos.com/providers/playn-go-casinos/" },
-  { name: "NetEnt", img: `${U}/2025/05/Netent-Software-Provider-Logo.webp`, href: "https://nohousecasinos.com/providers/netent-casinos/" },
-  { name: "IGT", img: `${U}/2025/05/IGT-Casino-Software-Provider-Logo.webp`, href: "https://nohousecasinos.com/providers/igt-casinos/" },
-  { name: "Evolution Gaming", img: `${U}/2025/05/Evolution-Gaming-Casino-Software-Provider-Logo.webp`, href: "https://nohousecasinos.com/providers/evolution-casinos/" },
+  { name: "Pragmatic Play", img: `${U}/2025/05/Pragmatic-Play-Casino-Software-Provider-Logo.webp`, href: `${S}/providers/pragmatic-play-casinos/` },
+  { name: "PlayTech", img: `${U}/2025/05/PlayTech-Casino-Software-Provider-Logo.webp`, href: `${S}/providers/playtech-casinos/` },
+  { name: "Play'n GO", img: `${U}/2025/05/Play-N-Go-Casino-Software-Provider-Logo.webp`, href: `${S}/providers/playn-go-casinos/` },
+  { name: "NetEnt", img: `${U}/2025/05/Netent-Software-Provider-Logo.webp`, href: `${S}/providers/netent-casinos/` },
+  { name: "IGT", img: `${U}/2025/05/IGT-Casino-Software-Provider-Logo.webp`, href: `${S}/providers/igt-casinos/` },
+  { name: "Evolution Gaming", img: `${U}/2025/05/Evolution-Gaming-Casino-Software-Provider-Logo.webp`, href: `${S}/providers/evolution-casinos/` },
 ];
 
-export const whyIntro =
-  "There are a bunch of online casinos out there, so what makes Australian online casinos your top pick?";
-export const whyImage = `${U}/2025/05/Australia-Casino.webp`;
-export const whyReasons = [
-  { title: "Convenience", icon: "home", text: "Play from home or on the go thanks to seamless cross-device performance." },
-  { title: "Bonuses", icon: "gift", text: "Why settle for less when reliable and friendly Aussie online casinos let you get more bang for your buck with promotions." },
-  { title: "Variety", icon: "grid", text: "Thousands of games from top software providers available at any time." },
-  { title: "Fast Payouts", icon: "zap", text: "As long as you have enough funds in your real money balance to request a withdrawal, you can cash out your winnings. Many casinos offer same-day or 24-hour withdrawals without charging transaction fees." },
-  { title: "Mobile Compatibility", icon: "phone", text: "Many operators optimise their casino platform for mobile play, which allows you to enjoy gaming on your phone or tablet. While few Australian online casinos offer apps for Android or iOS, mobile browser gaming runs smoothly and without issues provided your internet connection is stable." },
-] as const;
-export const whyOutro = "Plus, you’ll often find games and promos tailored specifically for Aussie players.";
+/* ---------- Payouts ---------- */
+export const payouts = {
+  eyebrow: "Deposits & withdrawals",
+  title: "Get Your Winnings Without the Wait",
+  text: "The right payment method makes all the difference. These are the options Aussie players reach for most — and what each one is best at.",
+  image: payoutsArt,
+  imageAlt: "Phone with a gold security shield",
+  link: { label: "Compare all payment methods", href: `${S}/payments/` },
+};
 
-export const paymentsIntro =
-  "The safety of depositing or withdrawing funds is crucial. These are the most reliable options in 2026:";
-export const paymentsImage = `${U}/2025/05/Australian-Online-Casino-Payment-Methods.webp`;
 export const payments = [
-  { name: "PayID", img: `${U}/2025/05/PayId-Casinos-Payment-Method-1.webp`, href: "https://nohousecasinos.com/payments/payid/" },
-  { name: "Neosurf", img: `${U}/2025/05/Neosurf-Casinos-Payment-Method.webp`, href: "https://nohousecasinos.com/payments/neosurf/" },
-  { name: "Flexepin", img: `${U}/2025/05/FlexePin-Casinos-Payment-Method.webp`, href: "https://nohousecasinos.com/payments/flexepin-casinos/" },
-  { name: "eZeeWallet", img: `${U}/2025/05/eZeeWallet-Casino-Payment-Method-Australia.webp`, href: "https://nohousecasinos.com/payments/ezeewallet-casinos/" },
+  { name: "PayID", bestFor: "Instant bank transfers", text: "Send money straight from your Aussie bank using just your email or phone number.", img: `${U}/2025/05/PayId-Casinos-Payment-Method-1.webp`, href: `${S}/payments/payid/` },
+  { name: "Neosurf", bestFor: "Private deposits", text: "Prepaid vouchers you can buy with cash — no card or bank details shared.", img: `${U}/2025/05/Neosurf-Casinos-Payment-Method.webp`, href: `${S}/payments/neosurf/` },
+  { name: "Flexepin", bestFor: "Budget control", text: "Load a fixed amount and play with exactly what’s on the voucher.", img: `${U}/2025/05/FlexePin-Casinos-Payment-Method.webp`, href: `${S}/payments/flexepin-casinos/` },
+  { name: "eZeeWallet", bestFor: "Quick cash-outs", text: "An e-wallet that keeps casino money separate from your everyday account.", img: `${U}/2025/05/eZeeWallet-Casino-Payment-Method-Australia.webp`, href: `${S}/payments/ezeewallet-casinos/` },
 ];
 
-export const latestReviews = [
-  { title: "FastOne Casino Review for Aussies", img: `${U}/2026/05/Fast-One-Casino-Logo.webp`, review: "https://nohousecasinos.com/reviews/fastone-casino/", play: "https://nohousecasinos.com/visit/fast-one-casino/", score: "9.0" },
-  { title: "Marvel Casino Review for Australian Players", img: `${U}/2026/05/Marvel-Casino-Logo.webp`, review: "https://nohousecasinos.com/reviews/marvel-casino/", play: "https://nohousecasinos.com/visit/marvel-casino/", score: "9.0" },
-  { title: "Candy Casino Review for Australian Players", img: `${U}/2026/05/Candy-Casino-Logo.webp`, review: "https://nohousecasinos.com/reviews/candy-casino/", play: "https://nohousecasinos.com/visit/candy-casino/", score: "9.0" },
-  { title: "BeepBeep Casino Review for Aussies", img: `${U}/2026/05/BeepBeep-Casino-Logo.webp`, review: "https://nohousecasinos.com/reviews/beepbeep-casino/", play: "https://nohousecasinos.com/visit/beepbeep-casino/", score: "9.0" },
-];
+/* ---------- Legal + play safe ---------- */
+export const legalCard = {
+  eyebrow: "The short answer",
+  title: "Can Aussies Play Online Casinos?",
+  text: "Yes — with a catch. The Interactive Gambling Act 2001 stops companies from offering online casino games to Australians, but it doesn’t make it illegal for you to play at offshore casinos. That’s why every site we list holds an international licence and accepts Aussie players.",
+  image: legalArt,
+};
+
+export const playSafe = {
+  eyebrow: "Play smart",
+  title: "Stay in Control, Every Session",
+  text: "Gambling should be fun, not a way to make money. A few simple habits keep it that way.",
+  image: playSafe,
+  imageAlt: "Phone with a timer and lock icon next to an hourglass and gold coins",
+  tips: [
+    "Set a deposit limit before you play",
+    "Decide how long you’ll play and stick to it",
+    "Never chase losses",
+    "Take regular breaks",
+  ],
+  help: [
+    { label: "Gambling Help Online · 1800 858 858", href: "https://www.gamblinghelponline.org.au/" },
+    { label: "BetStop — national self-exclusion", href: "https://www.betstop.gov.au/" },
+  ],
+  link: { label: "Our responsible gambling guide", href: `${S}/responsible-gambling/` },
+};
+
+/* ---------- FAQ ---------- */
+export const faqSection = {
+  eyebrow: "Questions & answers",
+  title: "Everything You Wanted to Ask",
+  text: "Quick answers to the questions we hear most from Aussie players.",
+};
 
 export const faqs = [
-  { q: "Is it legal to gamble online in Australia?", a: "It’s legal for Australians to play at offshore licensed casinos that accept Australian players. However, operators based in Australia can’t offer real-money casino games." },
-  { q: "Are Australian players allowed to play at online casinos?", a: "Yes. Australian players can play at online casinos that are licensed and accept players from Australia. Always check the casino’s license and reputation before signing up." },
-  { q: "What payment methods do Australian online casinos accept?", a: "Most casinos support Visa, Mastercard, Neosurf, crypto, and e-wallets like Skrill, eZeeWallet or Neteller for easy deposits and withdrawals." },
-  { q: "Can I trust casino reviews on NoHouseCasinos?", a: "Of course. When you register with the best Aussie casinos and make a deposit, you can usually claim welcome bonuses and free spins." },
-  { q: "Do affiliate casinos offer exclusive bonuses?", a: "Yes, many online casinos that accept Australian players offer welcome bonuses when you sign up. These bonuses usually come in the form of deposit-match offers and/or free spins for new players." },
-  { q: "What types of games can I play at Australian online casinos?", a: "Players can enjoy pokies, blackjack, roulette, baccarat, live dealer games, and more — all available on mobile and desktop." },
-  { q: "Do Aussie casinos offer online games with progressive jackpots?", a: "Yes, some online casinos that accept Australian players do offer games with progressive jackpots, especially pokie games." },
-  { q: "Can I cash out my winnings from Australian online casinos?", a: "Yes, you can cash out your winnings from Australian online casinos, provided you’ve met the casino’s wagering requirements and verified your identity." },
-  { q: "Are online casinos safe for Aussie players?", a: "Yes, as long as you choose licensed offshore casinos that are regulated by trusted bodies." },
-  { q: "Can I play for free?", a: "Absolutely. Most sites offer demo versions of games so you can play without depositing." },
-  { q: "Do I have to pay tax on my winnings?", a: "In most cases, no. Gambling winnings are generally tax-free in Australia." },
-  { q: "Which online casino is best for pokies?", a: "Outback Spins currently has the widest pokies selection." },
-  { q: "What is the minimum deposit?", a: "Usually around $10–20 AUD, depending on the payment method." },
+  { q: "How do you choose which casinos to list?", a: "Every casino goes through our 5-point test: licence and security, a real deposit and withdrawal, bonus terms, games and software, and customer support. Only casinos that pass every check make the leaderboard." },
+  { q: "Are these casinos safe for Australians?", a: "We only list offshore casinos with a valid international licence, encrypted payments and clear terms. We also re-check our list every month and remove any site that stops meeting our standards." },
+  { q: "What does wagering mean?", a: "Wagering (or playthrough) is how many times you need to bet a bonus before you can withdraw winnings from it. A $100 bonus with 40x wagering means you need to place $4,000 in bets. Use our bonus calculator to work it out for any offer." },
+  { q: "Which payment method pays out fastest?", a: "E-wallets and PayID are usually the quickest options. Voucher methods like Neosurf and Flexepin are great for deposits, but you’ll often need a different method to withdraw." },
+  { q: "Can I play on my phone?", a: "Yes. Every casino on our list works in your phone’s browser — no download needed. A few also offer apps for Android or iOS." },
+  { q: "Do I pay tax on casino winnings in Australia?", a: "Gambling winnings are generally not taxed for recreational players in Australia, because gambling is treated as a hobby rather than income. If you’re unsure about your situation, speak to a tax professional." },
+  { q: "Are the casino games fair?", a: "The casinos we recommend use games from established studios that are tested for random results. Look for return-to-player (RTP) figures in the game info to see how a game is set up to pay back over time." },
+  { q: "What should I do if gambling stops being fun?", a: "Take a break and reach out for support. Gambling Help Online (1800 858 858) is free and available 24/7, and BetStop lets you block yourself from licensed Australian wagering sites." },
 ];
 
+/* ---------- Closing call to action ---------- */
+export const finalCta = {
+  title: "Ready to Find Your Next Favourite Casino?",
+  text: "Jump back to the leaderboard and pick a casino that’s already been tested for you.",
+  button: { label: "Back to the leaderboard", href: "#leaderboard" },
+  image: ctaBackdrop,
+};
+
+/* ---------- Site chrome (identical to live site) ---------- */
 export const headerMenu = [
   { label: "Online Casinos", href: "https://nohousecasinos.com/" },
   { label: "Reviews", href: "https://nohousecasinos.com/reviews/" },
