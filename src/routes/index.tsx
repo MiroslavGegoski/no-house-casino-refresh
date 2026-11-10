@@ -1,14 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
-import { EditorNote, Hero } from "@/components/home/Hero";
-import { TopCasinos } from "@/components/home/TopCasinos";
-import { Games, HowItWorks, HowToChoose, HowWeRate, Legal } from "@/components/home/Guide";
-import { Bonuses, Faqs, LatestReviews, Payments, Providers, WhyPlay } from "@/components/home/Extras";
+import { HomeHero, LogoMarquee } from "@/components/home/HomeHero";
+import { Leaderboard, Podium } from "@/components/home/Rankings";
+import { BonusCalculator } from "@/components/home/BonusCalculator";
+import { Faq, FinalCta, GameFinder, LegalAndSafety, Payouts, TestLab } from "@/components/home/Sections";
 
-const title = "Best Aussie Casinos for 2026 - Compare Australian Online Casinos | NoHouseCasinos";
+const title = "Real Money Casinos Australia 2026 – Tested by Aussie Punters | NoHouseCasinos";
 const description =
-  "Compare the best Australian online casinos for 2026. Licensed, payout-friendly sites with big bonuses, free spins and fast PayID withdrawals.";
+  "Every casino tested with real deposits and withdrawals. Compare the 2026 Aussie leaderboard, work out bonus wagering and find fast-paying sites.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -29,20 +29,17 @@ function Index() {
     <div className="min-h-screen bg-background">
       <SiteHeader />
       <main>
-        <Hero />
-        <EditorNote />
-        <TopCasinos />
-        <HowItWorks />
-        <HowToChoose />
-        <Legal />
-        <Games />
-        <HowWeRate />
-        <Bonuses />
-        <Providers />
-        <WhyPlay />
-        <Payments />
-        <LatestReviews />
-        <Faqs />
+        <HomeHero />
+        <LogoMarquee />
+        <Podium />
+        <Leaderboard />
+        <BonusCalculator />
+        <GameFinder />
+        <TestLab />
+        <Payouts />
+        <LegalAndSafety />
+        <Faq />
+        <FinalCta />
       </main>
       <SiteFooter />
     </div>
