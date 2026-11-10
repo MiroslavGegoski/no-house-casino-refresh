@@ -7,9 +7,9 @@ export function parseBonus(text: string): BonusParts {
   const spins = text.match(/(\d[\d,]*)\s*free spins/i);
   const num = (s: string) => Number(s.replace(/,/g, ""));
   return {
-    matchPct: match ? num(match[1]) : null,
-    maxAmount: max ? num(max[1]) : null,
-    freeSpins: spins ? num(spins[1]) : null,
+    matchPct: match?.[1] ? num(match[1]) : null,
+    maxAmount: max?.[1] ? num(max[1]) : null,
+    freeSpins: spins?.[1] ? num(spins[1]) : null,
   };
 }
 
