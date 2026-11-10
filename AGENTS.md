@@ -32,3 +32,4 @@ use the editor.
 ## Project rules
 - Homepage content (headings, copy, image URLs, links) lives in `src/data/`; components in `src/components/home` only render it. Body images are local files in `src/assets/` (casino, provider and payment logos stay remote brand URLs). Why: all homepage copy and imagery must stay easy to update in one place.
 - `src/components/site/SiteHeader.tsx` and `SiteFooter.tsx` replicate the live site's header/footer and use their own `header`/`footer` tokens; redesign work must not restyle them. Why: the client wants the existing menu, logo and footer unchanged.
+- Bonus figures (match %, max amount, free spins), leaderboard sorting and the wagering calculator all derive from the `bonus` strings in `src/data/casinos.ts` via `src/lib/bonus.ts`. Why: editing a casino offer in one place updates every section.
