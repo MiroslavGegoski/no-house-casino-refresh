@@ -63,14 +63,14 @@ export function HomeHero() {
             height={1280}
             className="relative aspect-square w-full rounded-[2rem] object-cover shadow-lift"
           />
-          <div className="absolute -bottom-6 left-4 right-4 flex items-center gap-4 rounded-2xl border border-border bg-card p-4 shadow-lift sm:left-auto sm:right-[-1.5rem] sm:w-[340px]">
+          <div className="absolute -bottom-6 left-4 right-4 flex items-center gap-4 rounded-2xl border border-border bg-card p-4 shadow-lift sm:left-auto sm:right-[-1.5rem] sm:w-[380px]">
             <img src={pick.logo} alt={pick.name} width={135} height={135} className="size-16 shrink-0 rounded-xl bg-navy-deep object-contain" />
             <div className="min-w-0 flex-1">
               <p className="flex items-center gap-1 text-xs font-bold uppercase tracking-wider text-primary">
                 <BadgeCheck className="size-3.5" /> Casino of the month
               </p>
-              <p className="mt-0.5 truncate font-display text-lg font-bold text-foreground">{pick.name}</p>
-              <p className="truncate text-sm text-muted-foreground">{pick.bonus}</p>
+              <p className="mt-0.5 font-display text-lg font-bold leading-tight text-foreground">{pick.name}</p>
+              <p className="mt-0.5 text-sm leading-snug text-muted-foreground">{pick.bonus}</p>
             </div>
             <Button asChild variant="brand" size="sm" className="rounded-full">
               <a href={pick.play} target="_blank" rel="nofollow sponsored noopener">Play</a>

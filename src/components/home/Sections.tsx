@@ -21,6 +21,8 @@ export function GameFinder() {
                 "group relative overflow-hidden rounded-3xl bg-navy-art shadow-card",
                 i === 0 && "col-span-2 row-span-2",
                 i === 1 && "lg:col-span-2",
+                i >= 4 && "lg:col-span-2",
+                i === 5 && "col-span-2",
               )}
             >
               <img src={g.img} alt={g.title} width={768} height={768} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
@@ -72,8 +74,8 @@ export function TestLab() {
             <p className="eyebrow text-navy-muted">Studios we see in the best lobbies</p>
             <div className="mt-5 grid grid-cols-3 gap-3">
               {providers.map((p) => (
-                <a key={p.name} href={p.href} className="flex h-16 items-center justify-center rounded-xl bg-card p-3 transition-transform hover:-translate-y-0.5">
-                  <img src={p.img} alt={p.name} loading="lazy" className="max-h-full w-auto object-contain" />
+                <a key={p.name} href={p.href} className="flex h-20 items-center justify-center overflow-hidden rounded-xl bg-card px-2 transition-transform hover:-translate-y-0.5">
+                  <img src={p.img} alt={p.name} loading="lazy" className="h-full w-full scale-150 object-contain" />
                 </a>
               ))}
             </div>
