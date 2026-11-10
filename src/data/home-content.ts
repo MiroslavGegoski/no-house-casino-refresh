@@ -5,7 +5,7 @@
  */
 import heroPhone from "@/assets/hero-phone-sydney.jpg";
 import testLabDesk from "@/assets/test-lab-desk.jpg";
-import playSafe from "@/assets/play-safe.jpg";
+import playSafeArt from "@/assets/play-safe.jpg";
 import ctaBackdrop from "@/assets/hero-casino.jpg";
 import calculatorArt from "@/assets/bonus-casino.jpg";
 import legalArt from "@/assets/why-australia.jpg";
@@ -145,7 +145,7 @@ export const playSafe = {
   eyebrow: "Play smart",
   title: "Stay in Control, Every Session",
   text: "Gambling should be fun, not a way to make money. A few simple habits keep it that way.",
-  image: playSafe,
+  image: playSafeArt,
   imageAlt: "Phone with a timer and lock icon next to an hourglass and gold coins",
   tips: [
     "Set a deposit limit before you play",
