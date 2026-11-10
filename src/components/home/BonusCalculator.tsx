@@ -89,7 +89,7 @@ export function BonusCalculator() {
                 <Label className="text-sm font-semibold text-foreground">Wagering requirement</Label>
                 <span className="font-display text-xl font-extrabold text-primary">{wageringX}x</span>
               </div>
-              <Slider className="mt-4" min={0} max={70} step={1} value={[wageringX]} onValueChange={([v]) => setWageringX(v)} aria-label="Wagering requirement" />
+              <Slider className="mt-4" min={0} max={70} step={1} value={[wageringX]} onValueChange={([v]) => setWageringX(v ?? 0)} aria-label="Wagering requirement" />
             </div>
             <div>
               <p className="text-sm font-semibold text-foreground">Wagering applies to</p>

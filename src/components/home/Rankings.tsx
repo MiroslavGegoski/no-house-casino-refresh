@@ -35,7 +35,7 @@ function BonusChips({ c, dark }: { c: Ranked; dark?: boolean }) {
 }
 
 export function Podium() {
-  const [first, second, third] = ranked;
+  const [first, second, third] = ranked as [Ranked, Ranked, Ranked, ...Ranked[]];
   const order = [second, first, third];
   return (
     <section id="podium" className="relative overflow-hidden bg-navy-gradient py-20 lg:py-28">

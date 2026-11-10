@@ -4,7 +4,7 @@ import { hero, heroStats } from "@/data/home-content";
 import { rankedCasinos } from "@/data/casinos";
 
 export function HomeHero() {
-  const pick = rankedCasinos[0];
+  const pick = rankedCasinos[0]!;
   const [before] = hero.title.split(hero.highlight);
   return (
     <section className="relative overflow-hidden bg-background">
